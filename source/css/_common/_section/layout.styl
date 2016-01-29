@@ -19,9 +19,6 @@ html, body { height: 100%; }
   width: $main-desktop;
 
   .one-column & { width: $content-desktop; }
-  +desktop-large() {
-    .one-column & { width: $content-desktop-large; }
-  }
 }
 
 // Main Section
@@ -32,9 +29,8 @@ html, body { height: 100%; }
   width: $main-desktop;
 
   .one-column & { width: $content-desktop; }
-  +desktop-large() {
-    .one-column & { width: $content-desktop-large; }
-  }
+
+  .content { width: $content-desktop; }
 }
 
 
@@ -52,7 +48,4 @@ html, body { height: 100%; }
   width: $main-desktop;
 
   .one-column & { width: $content-desktop; }
-  +desktop-large() {
-    .one-column & { width: $content-desktop-large; }
-  }
 }
